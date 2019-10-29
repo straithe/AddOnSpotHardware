@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_SPDT SW1
+U 1 1 5DB7D218
+P 5950 2850
+F 0 "SW1" H 5950 3135 50  0000 C CNN
+F 1 "SW_SPDT" H 5950 3044 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 5950 2850 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/c-k/SK-12F17-G-7/CKN10393-ND/2747163" H 5950 2850 50  0001 C CNN
+F 4 "C&K" H 5950 2850 50  0001 C CNN "Manufacture"
+F 5 "SK-12F17-G 7 " H 5950 2850 50  0001 C CNN "Part Number"
+	1    5950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DB7DFF2
+P 6450 2950
+F 0 "R1" V 6243 2950 50  0000 C CNN
+F 1 "330" V 6334 2950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6380 2950 50  0001 C CNN
+F 3 "~" H 6450 2950 50  0001 C CNN
+	1    6450 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 2750 6300 2750
+NoConn ~ 6300 2750
+Wire Wire Line
+	6150 2950 6300 2950
+Wire Wire Line
+	7200 2950 7200 3200
+$Comp
+L Device:LED_Dual_ACA D1
+U 1 1 5DB7DB90
+P 7500 3300
+F 0 "D1" H 7500 2953 50  0000 C CNN
+F 1 "LED_Dual_ACA" H 7500 3044 50  0000 C CNN
+F 2 "LED_THT:LED_D10.0mm-3" H 7500 3300 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Adafruit%20PDFs/4042_Web.pdf" H 7500 3300 50  0001 C CNN
+F 4 "Adafruit " H 7500 3300 50  0001 C CNN "Manufacturer"
+F 5 "4042" H 7500 3300 50  0001 C CNN "Part Number"
+	1    7500 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 3700 7200 3400
+Wire Wire Line
+	6150 3700 6300 3700
+NoConn ~ 6300 3500
+Wire Wire Line
+	6150 3500 6300 3500
+$Comp
+L Device:R R2
+U 1 1 5DB7E65A
+P 6450 3700
+F 0 "R2" V 6243 3700 50  0000 C CNN
+F 1 "330" V 6334 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6380 3700 50  0001 C CNN
+F 3 "~" H 6450 3700 50  0001 C CNN
+	1    6450 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPDT SW2
+U 1 1 5DB7D417
+P 5950 3600
+F 0 "SW2" H 5950 3885 50  0000 C CNN
+F 1 "SW_SPDT" H 5950 3794 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Slide_1P2T_CK_OS102011MS2Q" H 5950 3600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/c-k/SK-12F17-G-7/CKN10393-ND/2747163" H 5950 3600 50  0001 C CNN
+F 4 "C&K" H 5950 3600 50  0001 C CNN "Manufacture"
+F 5 "SK-12F17-G 7 " H 5950 3600 50  0001 C CNN "Part Number"
+	1    5950 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3300 7950 3300
+$Comp
+L power:GND #PWR03
+U 1 1 5DB86511
+P 7950 3300
+F 0 "#PWR03" H 7950 3050 50  0001 C CNN
+F 1 "GND" V 7955 3172 50  0000 R CNN
+F 2 "" H 7950 3300 50  0001 C CNN
+F 3 "" H 7950 3300 50  0001 C CNN
+	1    7950 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5DB88431
+P 8550 2700
+F 0 "#PWR05" H 8550 2450 50  0001 C CNN
+F 1 "GND" V 8555 2572 50  0000 R CNN
+F 2 "" H 8550 2700 50  0001 C CNN
+F 3 "" H 8550 2700 50  0001 C CNN
+	1    8550 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5DB88EF0
+P 8050 2700
+F 0 "#PWR04" H 8050 2550 50  0001 C CNN
+F 1 "+3V3" V 8065 2828 50  0000 L CNN
+F 2 "" H 8050 2700 50  0001 C CNN
+F 3 "" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5DB893D4
+P 5750 2850
+F 0 "#PWR01" H 5750 2700 50  0001 C CNN
+F 1 "+3V3" V 5765 2978 50  0000 L CNN
+F 2 "" H 5750 2850 50  0001 C CNN
+F 3 "" H 5750 2850 50  0001 C CNN
+	1    5750 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR02
+U 1 1 5DB89708
+P 5750 3600
+F 0 "#PWR02" H 5750 3450 50  0001 C CNN
+F 1 "+3V3" V 5765 3728 50  0000 L CNN
+F 2 "" H 5750 3600 50  0001 C CNN
+F 3 "" H 5750 3600 50  0001 C CNN
+	1    5750 3600
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 8050 2600
+NoConn ~ 8550 2600
+$Comp
+L Device:R R3
+U 1 1 5DB9826C
+P 6850 2650
+F 0 "R3" H 6920 2741 50  0000 L CNN
+F 1 "330" H 6920 2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6780 2650 50  0001 C CNN
+F 3 "~" H 6850 2650 50  0001 C CNN
+F 4 "Do not populate" H 6920 2559 50  0000 L CNN "Note"
+	1    6850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DBB1814
+P 6850 4000
+F 0 "R4" H 6920 4091 50  0000 L CNN
+F 1 "330" H 6920 4000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6780 4000 50  0001 C CNN
+F 3 "~" H 6850 4000 50  0001 C CNN
+F 4 "Do not populate" H 6920 3909 50  0000 L CNN "Note"
+	1    6850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2500 8550 2500
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 5DB87C39
+P 8250 2600
+F 0 "J1" H 8300 2917 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 8300 2826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8250 2600 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/w-rth-elektronik/61200621621/732-5394-ND/4846913" H 8250 2600 50  0001 C CNN
+F 4 "Wurth Elektronik" H 8250 2600 50  0001 C CNN "Manufacturer"
+F 5 "61200621621" H 8250 2600 50  0001 C CNN "Part Number"
+	1    8250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2950 6850 2950
+Wire Wire Line
+	6850 2800 6850 2950
+Connection ~ 6850 2950
+Wire Wire Line
+	6850 2950 7200 2950
+Wire Wire Line
+	6600 3700 6850 3700
+Wire Wire Line
+	6850 3700 6850 3850
+Connection ~ 6850 3700
+Wire Wire Line
+	6850 3700 7200 3700
+Wire Wire Line
+	6850 2500 8050 2500
+Wire Wire Line
+	8950 2500 8950 4150
+Wire Wire Line
+	8950 4150 6850 4150
+$EndSCHEMATC
